@@ -1,0 +1,168 @@
+# Basic Linux commands
+
+1. ls
+Options: -l, -a, -h
+Description: Lists directory contents.
+
+-l: Displays a detailed listing with permissions, size, and modification date.
+-a: Shows hidden files (those that start with .).
+-h: Displays file sizes in human-readable format (e.g., KB, MB).
+
+Example:
+ls -lah
+This lists all files, including hidden ones, in long format with human-readable file sizes.
+
+2. cd
+Options: <directory path>
+Description: Changes the current directory to the specified path. No options needed; simply specify the directory.
+
+Example:
+cd /home/user/Documents
+Changes the current directory to /home/user/Documents.
+
+3. pwd
+Options: None
+Description: Prints the current working directory, showing the full path.
+
+Example:
+pwd
+Displays the current directory path (e.g., /home/user/Documents).
+
+4. mkdir
+Options: -p
+Description: Creates a new directory.
+
+-p: Creates parent directories if they don’t exist.
+
+Example:
+mkdir -p /home/user/Documents/Projects
+Creates the Projects directory and any missing parent directories under Documents.
+
+5. rmdir
+Options: None
+Description: Removes an empty directory.
+
+Example:
+rmdir /home/user/old_folder
+Removes the empty directory old_folder.
+
+6. rm
+Options: -r, -f
+Description: Removes files or directories.
+
+-r: Removes directories and their contents recursively.
+-f: Forces deletion without prompting for confirmation.
+
+Example:
+rm -rf /home/user/temp
+Recursively and forcefully removes the temp directory and all its contents.
+
+7. cp
+Options: -r, -i, -v
+Description: Copies files or directories.
+
+-r: Copies directories and their contents recursively.
+-i: Asks for confirmation before overwriting files.
+-v: Provides verbose output, showing files being copied.
+
+Example:
+cp -r /home/user/Documents /home/user/backup/
+Recursively copies the Documents directory into the backup directory.
+
+8. mv
+Options: -i, -v
+Description: Moves or renames files.
+
+-i: Asks for confirmation before overwriting files.
+-v: Provides verbose output, showing files being moved.
+
+Example:
+mv -v oldfile.txt newfile.txt
+Renames oldfile.txt to newfile.txt, with verbose output.
+
+9. touch
+Options: None
+Description: Creates an empty file if it doesn’t exist, or updates the timestamp of an existing file.
+
+Example:
+touch newfile.txt
+Creates an empty file called newfile.txt.
+
+11. cat
+Options: -n
+Description: Concatenates and displays the content of files.
+
+-n: Numbers each line of output.
+
+Example:
+cat -n file.txt
+Displays the contents of file.txt with line numbers.
+
+12. less
+Options: None
+Description: Displays file content page by page, allowing for easy navigation through large files.
+
+Example:
+less file.txt
+Displays the contents of file.txt in a scrollable view.
+
+13. head
+Options: -n <lines>
+Description: Displays the first 10 lines of a file by default. Use -n to specify the number of lines.
+
+Example:
+head -n 5 file.txt
+Displays the first 5 lines of file.txt.
+
+14. tail
+Options: -n <lines>, -f
+Description: Displays the last 10 lines of a file by default.
+
+-n: Specifies the number of lines to display.
+-f: Follows the file for real-time updates (useful for log monitoring).
+Example:
+tail -f /var/log/syslog
+Displays the last few lines of the syslog file and follows it for live updates.
+
+15. find
+Options: -name <filename>, -type d/f
+Description: Searches for files or directories.
+
+-name: Searches by filename.
+-type: Specifies the type (d for directory, f for file).
+
+Example:
+find /home/user -name "*.txt"
+Searches for all .txt files in the /home/user directory.
+
+16. grep
+Options: -i, -r, -n
+Description: Searches for text within files.
+
+-i: Case-insensitive search.
+-r: Recursively searches through directories.
+-n: Displays line numbers.
+
+Example:
+grep -rn "error" /var/log/
+Searches for the term error in all files under /var/log/, showing line numbers.
+
+17. chmod
+Options: +x, -R
+Description: Changes file permissions.
+
++x: Adds execute permissions to a file.
+-R: Recursively changes permissions for directories and their contents.
+
+Example:
+chmod +x script.sh
+Makes script.sh executable.
+
+18. chown
+Options: <owner>:<group>, -R
+Description: Changes the ownership and group of a file or directory.
+
+-R: Recursively changes ownership for directories and their contents.
+Example:
+chown user:group file.txt
+Changes the owner of file.txt to user and the group to group.
