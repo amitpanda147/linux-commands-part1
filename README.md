@@ -3,21 +3,37 @@ This repository provides a comprehensive guide to essential Linux commands with 
 
 Table of Contents
 Basic Commands
+
 ls
+
 cd
+
 pwd
+
 mkdir
+
 rmdir
+
 rm
+
 cp
+
 mv
+
 touch
+
 cat
+
 less
+
 head
+
 tail
+
 File Search and Permissions
+
 find
+
 grep
 chmod
 chown
