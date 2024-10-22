@@ -1,40 +1,41 @@
 # linux-commands-part1
 This repository provides a comprehensive guide to essential Linux commands with examples, options, and usage scenarios. Whether you're new to Linux or looking to enhance your skills, this guide will help you understand how to use some of the most common commands effectively.
 
-Table of Contents
-Basic Commands
+Table of Contents Basic Commands
 
-ls
+1. ls
 
-cd
+2. cd
 
-pwd
+3. pwd
 
-mkdir
+4. mkdir
 
-rmdir
+5. rmdir
 
-rm
+6. rm
 
-cp
+7. cp
 
-mv
+8. mv
 
-touch
+9. touch
 
-cat
+10. cat
 
-less
+11. less
 
-head
+12. head
 
-tail
+13. tail
 
-File Search and Permissions
+#File Search and Permissions
 
-find
+14. find
 
-grep
-chmod
-chown
+15. grep
+
+16. chmod
+    
+17. chown
 
